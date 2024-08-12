@@ -1,5 +1,8 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import Image from "next/image";
+import { FaAws, FaGolang, FaJava, FaJs, FaPython } from "react-icons/fa6";
+import { DiDjango, DiDocker, DiMysql, DiPostgresql, DiSymfony } from "react-icons/di";
+import { SiKubernetes } from "react-icons/si";
+
 
 export function Component() {
   return (
@@ -16,7 +19,7 @@ export function Component() {
               </p>
             </div>
             <div className="flex justify-center">
-              <Image
+              <img
                 src="/profile.jpg"
                 width="400"
                 height="400"
@@ -38,47 +41,47 @@ export function Component() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
               <Card>
-                <Image
-                  src="/placeholder.svg"
+                <img
+                  src="/project1.jpg"
                   width="400"
                   height="225"
                   alt="Project 1"
                   className="rounded-t-lg w-full h-[200px] object-cover"
                   style={{ aspectRatio: "400/225", objectFit: "cover" }} />
                 <CardContent className="p-4">
-                  <h3 className="text-xl font-bold">Project 1</h3>
+                  <h3 className="text-xl font-bold">Baaz.mn</h3>
                   <p className="text-muted-foreground mt-2">
-                    A scalable and efficient backend API built with Node.js and Express.
+                    A scalable and efficient backend API built with Django and PostgreSQL.
                   </p>
                 </CardContent>
               </Card>
               <Card>
-                <Image
-                  src="/placeholder.svg"
+                <img
+                  src="/project2.jpg"
                   width="400"
                   height="225"
                   alt="Project 2"
                   className="rounded-t-lg w-full h-[200px] object-cover"
                   style={{ aspectRatio: "400/225", objectFit: "cover" }} />
                 <CardContent className="p-4">
-                  <h3 className="text-xl font-bold">Project 2</h3>
+                  <h3 className="text-xl font-bold">Lendmn</h3>
                   <p className="text-muted-foreground mt-2">
                     A high-performance microservices architecture using Docker and Kubernetes.
                   </p>
                 </CardContent>
               </Card>
               <Card>
-                <Image
-                  src="/placeholder.svg"
+                <img
+                  src="/project3.jpg"
                   width="400"
                   height="225"
                   alt="Project 3"
                   className="rounded-t-lg w-full h-[200px] object-cover"
                   style={{ aspectRatio: "400/225", objectFit: "cover" }} />
                 <CardContent className="p-4">
-                  <h3 className="text-xl font-bold">Project 3</h3>
+                  <h3 className="text-xl font-bold">Nito Pay</h3>
                   <p className="text-muted-foreground mt-2">
-                    A real-time data processing pipeline built with Apache Kafka and Spark Streaming.
+                    High performance financial backend service using Golang, PostgreSQL and GraphQL.
                   </p>
                 </CardContent>
               </Card>
@@ -95,35 +98,47 @@ export function Component() {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 mt-8">
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <CodepenIcon className="w-8 h-8 text-muted-foreground" />
-                <span className="ml-2 text-muted-foreground">Node.js</span>
+                <FaGolang className="w-8 h-8 text-muted-foreground" />
+                <span className="ml-2 text-muted-foreground">Golang</span>
               </div>
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <XIcon className="w-8 h-8 text-muted-foreground" />
-                <span className="ml-2 text-muted-foreground">Express</span>
+                <FaPython className="w-8 h-8 text-muted-foreground" />
+                <span className="ml-2 text-muted-foreground">Python</span>
               </div>
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <DatabaseIcon className="w-8 h-8 text-muted-foreground" />
-                <span className="ml-2 text-muted-foreground">MongoDB</span>
+                <FaJava className="w-8 h-8 text-muted-foreground" />
+                <span className="ml-2 text-muted-foreground">Java</span>
               </div>
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <DatabaseIcon className="w-8 h-8 text-muted-foreground" />
+                <FaJs className="w-8 h-8 text-muted-foreground" />
+                <span className="ml-2 text-muted-foreground">JavaScript</span>
+              </div>
+              <div className="flex items-center justify-center bg-background rounded-lg p-4">
+                <DiDjango className="w-8 h-8 text-muted-foreground" />
+                <span className="ml-2 text-muted-foreground">Django</span>
+              </div>
+              <div className="flex items-center justify-center bg-background rounded-lg p-4">
+                <DiSymfony className="w-8 h-8 text-muted-foreground" />
+                <span className="ml-2 text-muted-foreground">Symfony</span>
+              </div>
+              <div className="flex items-center justify-center bg-background rounded-lg p-4">
+                <DiPostgresql className="w-8 h-8 text-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">PostgreSQL</span>
               </div>
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <RedoDotIcon className="w-8 h-8 text-muted-foreground" />
-                <span className="ml-2 text-muted-foreground">Redis</span>
+                <DiMysql className="w-8 h-8 text-muted-foreground" />
+                <span className="ml-2 text-muted-foreground">MySQL</span>
               </div>
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <DockIcon className="w-8 h-8 text-muted-foreground" />
+                <DiDocker className="w-8 h-8 text-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">Docker</span>
               </div>
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <CloudIcon className="w-8 h-8 text-muted-foreground" />
+                <SiKubernetes className="w-8 h-8 text-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">Kubernetes</span>
               </div>
               <div className="flex items-center justify-center bg-background rounded-lg p-4">
-                <CloudIcon className="w-8 h-8 text-muted-foreground" />
+                <FaAws className="w-8 h-8 text-muted-foreground" />
                 <span className="ml-2 text-muted-foreground">AWS</span>
               </div>
             </div>
@@ -299,90 +314,6 @@ function BriefcaseIcon(props) {
 }
 
 
-function CloudIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" />
-    </svg>)
-  );
-}
-
-
-function CodepenIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
-      <line x1="12" x2="12" y1="22" y2="15.5" />
-      <polyline points="22 8.5 12 15.5 2 8.5" />
-      <polyline points="2 15.5 12 8.5 22 15.5" />
-      <line x1="12" x2="12" y1="2" y2="8.5" />
-    </svg>)
-  );
-}
-
-
-function DatabaseIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <ellipse cx="12" cy="5" rx="9" ry="3" />
-      <path d="M3 5V19A9 3 0 0 0 21 19V5" />
-      <path d="M3 12A9 3 0 0 0 21 12" />
-    </svg>)
-  );
-}
-
-
-function DockIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <path d="M2 8h20" />
-      <rect width="20" height="16" x="2" y="4" rx="2" />
-      <path d="M6 16h12" />
-    </svg>)
-  );
-}
-
-
 function GithubIcon(props) {
   return (
     (<svg
@@ -465,43 +396,3 @@ function PhoneIcon(props) {
   );
 }
 
-
-function RedoDotIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <circle cx="12" cy="17" r="1" />
-      <path d="M21 7v6h-6" />
-      <path d="M3 17a9 9 0 0 1 9-9 9 9 0 0 1 6 2.3l3 2.7" />
-    </svg>)
-  );
-}
-
-
-function XIcon(props) {
-  return (
-    (<svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round">
-      <path d="M18 6 6 18" />
-      <path d="m6 6 12 12" />
-    </svg>)
-  );
-}
